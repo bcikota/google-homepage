@@ -13,6 +13,7 @@ a{
     min-width: 550px;
     margin: 0 auto;
     position: relative;
+    min-height: 500px;
 }
 
 
@@ -34,16 +35,15 @@ header div:last-of-type {
 }
 
 .sign-in {
+    
     border: 1px solid black;
 }
-
-
 
 
 /* section */
 section{
    height: 80vh;
-    
+
 }
 
 .section-div {
@@ -101,7 +101,11 @@ form > * {
 
 
 /* footer */
-
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 footer div > * {
     padding: 10px;
@@ -114,8 +118,3 @@ footer div:first-of-type {
 footer div:last-of-type {
     float: right;
 }
-
-
-
-
-
