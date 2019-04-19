@@ -8,24 +8,29 @@ a{text-decoration: none;}
 
 .container{
     display: grid;
-    grid-template-rows: 20px auto 60px;
+    width: 1400px;
+    margin: 0 auto;
+    grid-template-rows: 1fr 10fr 1fr;
+    height: 100vh;
 }
 
 
 /* header */
 header{
     display: grid;
-    
-
-    grid-template-columns: 1fr  minmax(650px, 1440px) 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr  1100px 1fr 1fr 1fr 1fr;
 }
 
 header a{padding: 10px;}
 
-.sign-in{
+.sign-in div{
     width: 40px;
- 
+    padding: .7em;
     border: 1px solid black;
+}
+
+.sign-in {
+    padding: 0;
 }
 
 .store{
@@ -36,21 +41,18 @@ header a{padding: 10px;}
 /* section */
 section{
     display: grid;
-    grid-template-columns: minmax(310px, 20fr) repeat(2, 1fr) minmax(310px, 20fr);
-    grid-template-rows: repeat(8, 1fr);
-    height: 400px;
-   
 }
 
 .logo{
     grid-column: 2;
-    grid-row: 5;
+    position: relative;
+    top: 40%;
 }
 
 form{
     grid-column: 2;
-    grid-row: 6;
     position: relative;
+    bottom: 40%;
 }
 
 #search{
@@ -87,10 +89,8 @@ form a{
 
 /* footer */
 footer{
-    position: absolute;
-    bottom: 10px;
      display: grid;
-    grid-template-columns: 1fr  minmax(650px, 1440px) 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr  1100px 1fr 1fr 1fr 1fr;
 }
 
 .business{
@@ -99,14 +99,7 @@ footer{
 
 footer a{
     padding: 10px;
-    
 }
 
-@media only screen and (max-height:500px)
-    {
-    footer{
-        position: fixed;
-        top: 460px;
-    }
-}
+
 
